@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.static('static'));
-/*
+
 app.get("/shout", (req, res) => {
 
   let name = req.query.name;
@@ -205,7 +205,7 @@ app.get("/sum2num",(req,res) => {
   let num2 = parseFloat(req.query.num2)
   res.send(add2num(num1, num2));
 })
-*/
+
 function checksubstatus(username, subscribed) {
   if (username.length >0 && subscribed==='true') {
     return username+" Subscribed"
